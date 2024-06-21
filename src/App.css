@@ -1,0 +1,75 @@
+.nav-link {
+  color: white;
+  text-decoration: none; /* Removes default underline */
+  padding-bottom: 4px; /* Adjust padding as needed */
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #ef1616; /* Optional: changes color on hover */
+}
+
+.active-link {
+  color: white;
+  padding-bottom: 4px;
+}
+
+.active-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px; /* Adjust the height as needed */
+  background-color: #ef1616; /* Underline color */
+}
+.section {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+}
+.desc-section {
+  width: 100vw;
+  height: 100vh;
+  background: url("/interior.png") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: -2;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay {
+  background-color: #393939;
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.specs-section {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  z-index: 10;
+  flex-direction: column;
+  padding: 10px 50px;
+  background: #fff;
+  margin-bottom: 30px;
+}
+.slider-container {
+  width: 70%;
+  height: 500px;
+}
+.image-container {
+  width: 100%;
+  height: 300px;
+}
+.image {
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+}
